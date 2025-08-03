@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ankit Kamboj Resume - Executive Summary</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #eeeeee, #b3b3b3);
+            min-height: 100vh;
+        }
+        img.profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .intro {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .summary {
+            margin-top: 30px;
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.6;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .nav-links {
+            margin-top: 50px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav-links li {
+            margin: 20px 0;
+            font-size: 1.3rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .nav-links a i {
+            margin-right: 10px;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Profile Picture -->
+    <img src="{{ url_for('static', filename='images/photo.png') }}" alt="Ankit Kamboj" class="profile-pic">
+
+    <!-- Intro Line -->
+    <div class="intro">
+        <h2>Ankit Kamboj, MS</h2>
+        <p><em>He/Him</em></p>
+        <p>Transforming decisions with Data and AI | Walmart | University of Michigan</p>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="summary">
+        <p>
+            I am a seasoned data science and analytics professional with 6+ years of experience driving strategic, data-backed decision-making across 
+            Retail, Automotive, and Finance sectors. I have led cross-functional teams and partnered with senior stakeholders in global markets —
+            including Canada, Japan, and India — to deliver scalable data solutions, optimize strategies, and enable platform-driven transformation.
+        </p>
+        <p>
+            My expertise lies in bridging strategy and execution by building robust data pipelines, leading BI and analytics delivery,
+            implementing artificial intelligence in real business applications, and shaping data product roadmaps that align with business objectives.
+        </p>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+        <li>
+            <a href="{{ url_for('education') }}">
+                <i class="fas fa-graduation-cap"></i> Education
+            </a>
+        </li>
+        <li>
+            <a href="{{ url_for('experience') }}">
+                <i class="fas fa-briefcase"></i> Experience
+            </a>
+        </li>
+        <li>
+            <a href="{{ url_for('technical_knowledge') }}">
+                <i class="fas fa-microchip"></i> Technical Knowledge
+            </a>
+        </li>
+    </ul>
+
+</body>
+</html>

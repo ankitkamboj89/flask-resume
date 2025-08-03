@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Education - Ankit Kamboj</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #eeeeee, #b3b3b3);
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin: auto;
+        }
+        li {
+            display: flex;
+            align-items: flex-start;
+            margin: 25px 0;
+            font-size: 1.1rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .edu-logo {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            object-fit: contain;
+        }
+        .edu-content {
+            flex: 1;
+        }
+        .edu-content p {
+            margin: 6px 0;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+        .course-grid {
+            font-size: 0.9rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 4px 20px;
+            margin-top: 5px;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 50px;
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Education</h1>
+
+<ul>
+    <li>
+        <img src="{{ url_for('static', filename='images/umich_logo.jpg') }}" alt="University of Michigan" class="edu-logo">
+        <div class="edu-content">
+            <p><strong>Master of Data Science</strong>, University of Michigan – Ann Arbor</p>
+            <p><span class="highlight">GPA:</span> 3.82 / 4.00</p>
+            <p><span class="highlight">Key Courses:</span></p>
+            <div class="course-grid">
+                <span>Big Data (A)</span>
+                <span>Machine Learning Pipelines (A-)</span>
+                <span>Supervised Learning (A)</span>
+                <span>Causal Inference (A)</span>
+                <span>Applied NLP (A)</span>
+                <span>Data Mining I (A)</span>
+                <span>Data Mining II (A)</span>
+                <span>Business SQL (A-)</span>
+                <span>Deep Learning I (A-)</span>
+                <span>Applied GenAI (A)</span>
+                <span>Efficient Data Processing (A)</span>
+                <span>Unsupervised Learning (A-)</span>
+                <span>Advance Database Archetecture and Tech. (A-)</span>
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <img src="{{ url_for('static', filename='images/uwa_logo.png') }}" alt="UWA" class="edu-logo">
+        <div class="edu-content">
+            <p><strong>Graduate Certificate in Data Science</strong>, University of Western Australia – Perth</p>
+            <p><span class="highlight">CGPA:</span> 6.0 / 7.0 (Distinction)</p>
+            <p><span class="highlight">Relevant Courses:</span></p>
+            <div class="course-grid">
+                <span>Machine Learning</span>
+                <span>NLP</span>
+                <span>Computer Vision</span>
+                <span>Data Warehousing</span>
+                <span>Comp. Data Analysis</span>
+                <span>RDBMS</span>
+                <span>Comp. Thinking (Python)</span>
+                <span>Statistics</span>
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <img src="{{ url_for('static', filename='images/iimc_logo.png') }}" alt="IIM Calcutta" class="edu-logo">
+        <div class="edu-content">
+            <p><strong>MBA</strong>, Indian Institute of Management Calcutta – IIM C (Global Top 100 MBA)</p>
+            <p>Focus: Business Strategy, Analytics, Finance</p>
+        </div>
+    </li>
+
+    <li>
+        <img src="{{ url_for('static', filename='images/thapar_logo.png') }}" alt="Thapar University" class="edu-logo">
+        <div class="edu-content">
+            <p><strong>Bachelor of Engineering</strong>, Thapar University – Patiala</p>
+            <p>Electronics and Communication Engineering</p>
+        </div>
+    </li>
+</ul>
+
+<p class="back-link">
+    <a href="{{ url_for('executive_summary') }}">🔙 Back to Home</a>
+</p>
+
+</body>
+</html>

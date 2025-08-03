@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Technical Knowledge - Ankit Kamboj</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #eeeeee, #b3b3b3);
+            min-height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 700px;
+            margin: auto;
+            text-align: left;
+        }
+        li {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        i {
+            color: #007BFF;
+            min-width: 25px;
+        }
+        .back-link {
+            margin-top: 40px;
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Technical Knowledge</h1>
+
+    <ul>
+        <li>
+            <i class="fas fa-database"></i>
+            <strong>Data Engineering:</strong> Advanced data pipelines, ingestion, transformation, Apache Spark
+        </li>
+        <li>
+            <i class="fas fa-code"></i>
+            <strong>Languages:</strong> Python (Pandas, NumPy, Scikit), SQL
+        </li>
+        <li>
+            <i class="fas fa-brain"></i>
+            <strong>AI/ML:</strong> Applied AI in production, LLMs, Elasticity modeling, MMM
+        </li>
+        <li>
+            <i class="fas fa-tools"></i>
+            <strong>Tools:</strong> Airflow, DBT, PowerBI, Tableau, BigQuery, Snowflake
+        </li>
+        <li>
+            <i class="fas fa-chart-bar"></i>
+            <strong>BI & Analytics:</strong> Dashboarding, automation, storytelling
+        </li>
+        <li>
+            <i class="fas fa-users-cog"></i>
+            <strong>Leadership:</strong> Cross-functional team leadership, Agile delivery, Strategic planning
+        </li>
+    </ul>
+
+    <p class="back-link">
+        <a href="{{ url_for('executive_summary') }}">🔙 Back to Home</a>
+    </p>
+
+</body>
+</html>

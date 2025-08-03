@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experience - Ankit Kamboj</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #eeeeee, #b3b3b3);
+            min-height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 40px;
+        }
+        .experience-section {
+            max-width: 800px;
+            margin: auto;
+        }
+        .role-card {
+            background-color: rgba(255, 255, 255, 0.92);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        .role-content {
+            flex: 1;
+        }
+        .role-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .back-link {
+            margin-top: 40px;
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Professional Experience</h1>
+
+    <div class="experience-section">
+
+        <div class="role-card">
+    <img src="{{ url_for('static', filename='images/walmart_logo.jpg') }}" alt="Walmart Logo" class="company-logo">
+    <div class="role-content">
+        <div class="role-title">Manager, Measurement and Analysis – Walmart Connect (Jan 2025 – Present)</div>
+        <ul>
+    <li><strong>In-Store Marketing Measurement (Data Science & BI Integration):</strong>
+        <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
+            <li>Spearheaded development of end-to-end data science pipelines to evaluate in-store marketing campaign effectiveness.</li>
+            <li>Designed data ingestion workflows feeding ML algorithms and built dynamic dashboards to visualize ROI, reach, and uplift.</li>
+            <li><em>Tech Used:</em> Python, Airflow, SQL, BigQuery, Looker, Pandas, NumPy, Scikit-learn</li>
+        </ul>
+    </li>
+
+    <li><strong>AI-Powered Insights Generation and PPT Automation:</strong>
+        <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
+            <li>Developed a self-learning AI tool that classifies campaign data, benchmarks KPIs, and auto-generates contextual insights using LLMs.</li>
+            <li>Fully automated campaign reporting workflows by integrating LangChain, OpenAI, and pptx libraries.</li>
+            <li><em>Tech Used:</em> Python, LangChain, OpenAI API, python-pptx, Jinja2, Pandas</li>
+        </ul>
+    </li>
+
+    <li><strong>Internal Reporting Automation (Category Performance):</strong>
+        <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
+            <li>Directed automation of recurring internal reports, eliminating manual intervention and enabling near real-time insights for marketing teams.</li>
+            <li><em>Tech Used:</em> dbt, Airflow, SQL, BigQuery, PowerBI/Tableau</li>
+        </ul>
+    </li>
+
+    <li><strong>Strategic Ownership:</strong> Partnered with senior stakeholders to align technical delivery with business strategy, driving actionable insights for internal teams and external partners.</li>
+</ul>
+
+    </div>
+</div>
+
+
+        <div class="role-card">
+            <img src="{{ url_for('static', filename='images/loblaws_logo.png') }}" alt="Loblaws Logo" class="company-logo">
+            <div class="role-content">
+                <div class="role-title">Manager, Customer Insights – Loblaws (Oct 2022 – Jan 2025)</div>
+                <ul>
+    <li><strong>Team Leadership & Delivery:</strong>
+        <ul>
+            <li>Led cross-functional team of 1 Data Analyst and 1 Junior Data Scientist across enterprise analytics initiatives.</li>
+            <li>Ensured agile delivery of high-impact data solutions, enabling better operational and strategic decision-making.</li>
+        </ul>
+    </li>
+
+    <li><strong>Strategic Category Expansion & Revenue Optimization:</strong>
+        <ul>
+            <li>Unlocked $20M in revenue by identifying market gaps and optimizing category-level resource allocation through predictive modeling and data segmentation.</li>
+            <li><em>Tech Used:</em> Python, SQL, PowerBI, Pandas</li>
+        </ul>
+    </li>
+
+    <li><strong>A/B Testing Frameworks for Marketing Optimization:</strong>
+        <ul>
+            <li>Built scalable experimentation platforms for omnichannel strategies to evaluate ROAS and shape future campaign roadmaps.</li>
+            <li><em>Tech Used:</em> Python, SciPy/Statsmodels, SQL, Tableau</li>
+        </ul>
+    </li>
+
+    <li><strong>Customer Behavior & Migration Analysis:</strong>
+        <ul>
+            <li>Delivered behavioral analytics for clients like General Mills, uncovering migration patterns and retention opportunities.</li>
+            <li><em>Tech Used:</em> Python (Seaborn, Pandas), BigQuery, clustering models</li>
+        </ul>
+    </li>
+
+    <li><strong>Executive Stakeholder Partnership & Strategic Planning:</strong>
+        <ul>
+            <li>Collaborated with VP of Strategy at Irving to define enterprise-wide category analytics roadmap.</li>
+        </ul>
+    </li>
+
+    <li><strong>Reporting Automation & Agile BI Delivery:</strong>
+        <ul>
+            <li>Replaced manual pipelines with scalable automated dashboards for account teams.</li>
+            <li>Embedded agile delivery practices to accelerate delivery and iteration cycles.</li>
+            <li><em>Tech Used:</em> Airflow, dbt, SQL, PowerBI</li>
+        </ul>
+    </li>
+
+    <li><strong>Retail Shelf Optimization & Data Product Development:</strong>
+        <ul>
+            <li>Delivered real-time shelf optimization solution for Coca-Cola across 1,200 stores, reducing stockouts by 12%.</li>
+            <li><em>Tech Used:</em> Python, REST APIs, Snowflake, ML classification models</li>
+        </ul>
+    </li>
+
+    <li><strong>Promotion Campaign Optimization:</strong>
+        <ul>
+            <li>Optimized promo strategies for top-tier brands using uplift modeling and timeline-aligned analytics.</li>
+            <li><em>Tech Used:</em> Uplift models (XGBoost/LightGBM), Python, SQL, Matplotlib</li>
+        </ul>
+    </li>
+
+    <li><strong>Pricing Intelligence with Elasticity Models:</strong>
+        <ul>
+            <li>Created pricing models using elasticity curves for General Mills, improving margins and pricing agility.</li>
+            <li><em>Tech Used:</em> Regression modeling, Python, Excel/Looker</li>
+        </ul>
+    </li>
+
+    <li><strong>Enterprise-Grade Sales Dashboards:</strong>
+        <ul>
+            <li>Developed real-time KPI-aligned dashboards for Coca-Cola leadership enabling store-level decisions.</li>
+            <li><em>Tech Used:</em> Tableau, SQL, Data Vault architecture</li>
+        </ul>
+    </li>
+</ul>
+
+            </div>
+        </div>
+
+        <div class="role-card">
+            <img src="{{ url_for('static', filename='images/nomura_logo.png') }}" alt="Nomura Logo" class="company-logo">
+            <div class="role-content">
+                <div class="role-title">Senior Consultant (Analytics) – Nomura Consulting (Jun 2018 – Jun 2021)</div>
+                <ul>
+    <li><strong>Marketing Strategy Optimization:</strong>
+        <ul>
+            <li>Spearheaded data-driven marketing optimization for a top Indian automotive brand using customized Marketing Mix Modeling (MMM).</li>
+            <li>Improved media allocation effectiveness, resulting in an 18% increase in ROAS.</li>
+            <li><em>Tech Used:</em> Python (statsmodels, pandas), Excel, SQL, regression modeling</li>
+        </ul>
+    </li>
+
+    <li><strong>Used Car Business Digitization:</strong>
+        <ul>
+            <li>Led digital transformation for a major Southeast Asian OEM's used car division in Vietnam.</li>
+            <li>Designed a dynamic pricing engine using historical transactions and market signals, reducing inventory turnover by 27%.</li>
+            <li><em>Tech Used:</em> Python, Time Series Models, Streamlit (prototype), SQL</li>
+        </ul>
+    </li>
+
+    <li><strong>Automotive Finance Business Establishment:</strong>
+        <ul>
+            <li>Launched a digital lending and credit scoring platform for a Southeast Asian automotive finance startup.</li>
+            <li>Designed credit evaluation system integrating risk segmentation, approval logic, and digital workflows.</li>
+            <li><em>Tech Used:</em> Python, SQL, Scikit-learn, Flask (POC), REST API design</li>
+        </ul>
+    </li>
+
+    <li><strong>Long-Term Strategy Development:</strong>
+        <ul>
+            <li>Crafted a 10-year strategic roadmap incorporating market sizing, forecasting, and new product planning for an Indian OEM.</li>
+            <li>Enabled long-term innovation planning aligned with emerging customer trends.</li>
+            <li><em>Tools Used:</em> Excel modeling, Tableau, industry research</li>
+        </ul>
+    </li>
+
+    <li><strong>Sales Operations Transformation:</strong>
+        <ul>
+            <li>Redesigned sales operations across KPIs, sales funnel tracking, and performance dashboards.</li>
+            <li>Drove a 2.3% increase in customer engagement and improved service revenue through real-time analytics enablement.</li>
+            <li><em>Tech Used:</em> Tableau, SQL, PowerPoint, ETL scripting</li>
+        </ul>
+    </li>
+
+    <li><strong>Connected Car Innovation Strategy:</strong>
+        <ul>
+            <li>Led the connected car roadmap in partnership with a Japanese electronics major for Indian market entry.</li>
+            <li>Defined future-ready telematics and IoT use cases for a 10-year horizon.</li>
+            <li><em>Tools Used:</em> Strategic frameworks, Foresight methods, Business model canvas</li>
+        </ul>
+    </li>
+</ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <p class="back-link">
+        <a href="{{ url_for('executive_summary') }}">🔙 Back to Home</a>
+    </p>
+
+</body>
+</html>
