@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ankit Kamboj - AI/ML Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #eeeeee, #b3b3b3);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        .project {
+            margin-top: 40px;
+            text-align: left;
+        }
+        .project-title {
+            font-size: 1.4rem;
+            color: #333;
+            font-weight: bold;
+        }
+        .project-details {
+            margin-top: 10px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .project-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2><i class="fas fa-brain"></i> AI/ML Projects</h2>
+
+        <div class="project">
+            <div class="project-title">📈 Customer Churn Prediction Web App</div>
+            <div class="project-details">
+                This Flask web app predicts whether a telecom customer is likely to churn based on inputs like tenure, contract type,
+                internet services, and monthly charges. The model was trained on the <strong>Telco Customer Churn</strong> dataset using
+                a <strong>Random Forest Classifier</strong> with <strong>Label Encoding</strong> and <strong>StandardScaler</strong> preprocessing.
+                <br><br>
+                The pipeline includes:
+                <ul>
+                    <li>Data cleaning and type conversions (handling TotalCharges as float)</li>
+                    <li>Label encoding for all categorical features</li>
+                    <li>Train-test split (80/20) with standardization of numeric fields</li>
+                    <li>RandomForest training with saved model, scaler, and label encoders using <code>joblib</code></li>
+                </ul>
+                <strong>Evaluation Metrics:</strong><br>
+                F1 Score (Churn = Yes): <strong>~0.63</strong><br>
+                F1 Score (Churn = No): <strong>~0.86</strong><br>
+                Overall Accuracy: <strong>~79%</strong><br><br>
+
+                ▶️ <strong>Launch App:</strong><br>
+                <a class="project-link" href="https://churn-predictor-i19b.onrender.com/" target="_blank">
+                    Predict Churn Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
