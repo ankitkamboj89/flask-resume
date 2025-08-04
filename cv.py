@@ -18,7 +18,7 @@ def experience():
 def technical_knowledge():
     return render_template('technical_knowledge.html')
 
-@app.route("/projects")
+@app.route("/AI_ML_Projects")
 def projects():
     return render_template("AI_ML_Projects.html")
 
