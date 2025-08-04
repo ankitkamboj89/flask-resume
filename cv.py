@@ -18,5 +18,9 @@ def experience():
 def technical_knowledge():
     return render_template('technical_knowledge.html')
 
+@app.route("/projects")
+def projects():
+    return render_template("AI_ML_Projects.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
